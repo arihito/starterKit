@@ -1,0 +1,36 @@
+//
+// pagetop
+//
+.page-top {
+  position: fixed;
+  bottom: 20px;
+  right: 25px;
+  overflow: hidden;
+  z-index: 20;
+  @media screen and (max-width: 768px) {
+    bottom: 50px;
+  }
+  @media (max-width: 768px) and (orientation: landscape) {
+    bottom: 100px;
+  }
+  a {
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1;
+    color:  #ccc;
+    background: #999;
+    text-decoration: none;
+    width: 80px;
+    height: 80px;
+    padding: 20px 0;
+    text-align: center;
+    display: block;
+    border-radius: 5px;
+    font-size: 3rem;
+    &:hover {
+      text-decoration: none;
+      background: #666;
+      text-shadow: 0 0 10px #333;
+    }
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <title>(PageTitle | )SiteTitle</title>
+    <meta name="keywords" content="キーワード,半角のカンマ区切りで6~7語(SEOの効果なし)">
+    <meta name="description" content="検索結果に表示する200語程度のページ説明文(SEOの効果なし)">
+    <!-- スマホの表示倍率を100%にリセット -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- iPhoneXでのボックス表示対応(Bootstrapのハンバーガーアイコンが無効になる) -->
+    <!-- <meta name="viewport" content="viewport-fit=cover"> -->
+    <!-- OGP (Facebookでのフィード表示) -->
+    <meta property="fb:app_id" content="App-ID(15文字の半角数字)" />
+    <meta property="og:title" content="(PageTitle | )SiteTitle" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="http://sample.com/aboutus" />
+    <meta property="og:image" content="http://test.com/img/ogp.jpg" />
+    <meta property="og:site_name" content="SiteTitle" />
+    <meta property="og:description" content="ページ説明文" />
+
+    <!-- ファビコン -->
+    <link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- Bootstrap3.3.7 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <!-- OriginCSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- jQuery3 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Bootstrap3.3.7 Javascript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- OriginalJS -->
+    <script src="js/index.js"></script>
+
+    <!-- IE9以下にHTML5の新要素を認識 -->
+    <!--[if lt IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+    <![endif]-->
+</head>
+
+<body class="top">
+  <header class="gl-header">
+    <nav class="navbar navbar-fixed-top">
+      <!-- 1000px以下 -->
+      <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><h1 class="gl-header_title">SiteTitle</h1></a>
+          </div>
+          <div id="navbar" class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Top</a></li>
+              <li><a href="#">Menu01</a></li>
+              <li><a href="#">Menu02</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Menu03 <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Menu03-1</a></li>
+                  <li><a href="#">Menu03-2</a></li>
+                  <li><a href="#">Menu03-3</a></li>
+                  <li role="separator" class="divider"></li>
+                  <li class="dropdown-header">Menu03-4</li>
+                  <li><a href="#">Menu03-4-1</a></li>
+                  <li><a href="#">Menu03-4-2</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href="./">Utility01</a></li>
+              <li><a href="#">Utility02</a></li>
+              <li><a href="#">Utility03</a></li>
+            </ul>
+          </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero"></section>
+
+  <main>
+    <div class="container">
+      <section class="block">
+          <div class="block_body">
+            <h2 class="block_body_title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+
+            <p class="block_body_p"><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+
+            <h2 class="block_body_title">Header Level 2</h2>
+
+            <ol class="block_body_lists">
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+            </ol>
+
+            <p class="block_body_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+
+            <h3 class="block_body_subtitle">Header Level 3</h3>
+
+            <ul class="block_body_lists">
+              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+              <li>Aliquam tincidunt mauris eu risus.</li>
+            </ul>
+
+          </div>
+      </section>
+    </div>
+  </main>
+
+  <p class="page-top"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p>
+
+  <footer class="gl-footer">
+    <div class="container gl-footer_container">
+      <small>&copy;20XX XXXX Co., Ltd. All Rights Reserved.</small>
+    </div>
+  </footer>
+
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96344339-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('require', 'linkid');
+    gtag('config', 'UA-96344339-1');
+  </script>
+
+</body>
+</html
