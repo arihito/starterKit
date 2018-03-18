@@ -62,7 +62,9 @@ $ git commit -m "first commit" (gcm "...")
 ```
 
 - githubのリモートリポジトリを作成(初回のみ)
+
 右上のアイコンから「New Repository」
+
 ※任意のリポジトリ名"projectName"
 
 - ローカルリポジトリと連携(初回のみ)
@@ -77,11 +79,11 @@ $ git push -u origin master (gpuom)
 
 ## gulpfile.jsのサーバーアップ編集
 
-host: "ftp.XXX.XXXX.com", //FTPホストアドレス
-user: "zdXXXX", //FTPユーザー名
-pass: "", //FTPパスワード
-port: 21, //ポート番号
-remotePath: "/WEB_ROOT/zdXXXX.XXX.XXXXX.com/HtDocs/" //サーバ上のアップロードパス
+- host: "ftp.XXX.XXXX.com", //FTPホストアドレス
+- user: "zdXXXX", //FTPユーザー名
+- pass: "", //FTPパスワード
+- port: 21, //ポート番号
+- remotePath: "/WEB_ROOT/zdXXXX.XXX.XXXXX.com/HtDocs/" //サーバ上のアップロードパス
 
 - htmlフォルダ内のデータをアップロード
 ```npm
