@@ -1,7 +1,7 @@
 //
 // pagetop
 //
-.page-top {
+#pageTop {
   position: fixed;
   bottom: 20px;
   right: 25px;
@@ -18,15 +18,15 @@
     font-style: normal;
     line-height: 1;
     color:  #ccc;
-    background: #999;
+    background: #aaa;
     text-decoration: none;
-    width: 80px;
-    height: 80px;
-    padding: 20px 0;
+    width: 60px;
+    height: 60px;
+    padding: 15px 0;
     text-align: center;
     display: block;
     border-radius: 5px;
-    font-size: 3rem;
+    font-size: 2.4rem;
     &:hover {
       text-decoration: none;
       background: #666;

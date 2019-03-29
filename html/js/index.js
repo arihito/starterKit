@@ -2,20 +2,20 @@ $(function(){
   //
   // Button back to the Top
   //
-  var topBtn = $('.page-top');
+  const topBtn = $('#pageTop');
   topBtn.hide();
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 300) {
+    if ($(this).scrollTop() > 50) {
       topBtn.fadeIn();
     } else {
       topBtn.fadeOut();
     }
   });
   topBtn.click(function () {
-    $('body,html').animate({
+    topBtn.fadeOut();
+    $('html, body').animate({
       scrollTop: 0
-    }, 500);
+    }, 300);
     return false;
   });
-
 });

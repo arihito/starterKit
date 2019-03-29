@@ -23,19 +23,12 @@
 
     <!-- ファビコン -->
     <link rel="icon" href="images/favicon.png" type="image/png">
-    <!-- Bootstrap3.3.7 -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Bootstrap4.1.3 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <!-- FontAwesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <!-- OriginCSS -->
     <link rel="stylesheet" href="css/style.css">
-
-    <!-- jQuery3 -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- Bootstrap3.3.7 Javascript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <!-- OriginalJS -->
-    <script src="js/index.js"></script>
 
     <!-- IE9以下にHTML5の新要素を認識 -->
     <!--[if lt IE 9]>
@@ -44,85 +37,85 @@
 </head>
 
 <body class="top">
-  <header class="gl-header">
-    <nav class="navbar navbar-fixed-top">
-      <!-- 1000px以下 -->
+  <header class="glHeader">
+    <nav class="navbar navbar-expand-lg navbar-light">
       <div class="container">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#"><h1 class="gl-header_title">SiteTitle</h1></a>
-          </div>
-          <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="#">Top</a></li>
-              <li><a href="#">Menu01</a></li>
-              <li><a href="#">Menu02</a></li>
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button">Menu03 <span class="caret"></span></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Menu03-1</a></li>
-                  <li><a href="#">Menu03-2</a></li>
-                  <li><a href="#">Menu03-3</a></li>
-                  <li role="separator" class="divider"></li>
-                  <li class="dropdown-header">Menu03-4</li>
-                  <li><a href="#">Menu03-4-1</a></li>
-                  <li><a href="#">Menu03-4-2</a></li>
-                </ul>
-              </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="./">Utility01</a></li>
-              <li><a href="#">Utility02</a></li>
-              <li><a href="#">Utility03</a></li>
-            </ul>
-          </div>
+        <a class="navbar-brand" href="#"><h1 class="navbar-brand__title">SiteTitle</h1></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#Navber">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="Navber">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Top</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Menu01</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Menu02</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Menu03</a></li>
+            <li class="nav-item dropdown">
+              <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" data-toggle="dropdown">
+                Dropdown
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Menu01</a>
+                <a class="dropdown-item" href="#">Menu02</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Menu03</a>
+              </div>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input type="search" class="form-control mr-sm-2" placeholder="Search...">
+            <button type="submit" class="btn btn-secondary my-2 px-4 my-sm-0">Search</button>
+          </form>
+        </div>
       </div>
     </nav>
   </header>
 
-  <section class="hero"></section>
+  <section class="hero">
+    <div class="container">
+      <h2 class="hero__title">Lorem ipsum dolor sit amet, <br>consectetur adipisicing elit. Pariatur, blanditiis.</h2>
+    </div>
+  </section>
 
   <main>
     <div class="container">
-      <section class="block">
-          <div class="block_body">
-            <h2 class="block_body_title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
 
-            <p class="block_body_p"><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
-
-            <h2 class="block_body_title">Header Level 2</h2>
-
-            <ol class="block_body_lists">
-              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-              <li>Aliquam tincidunt mauris eu risus.</li>
-            </ol>
-
-            <p class="block_body_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget ligula molestie gravida. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
-
-            <h3 class="block_body_subtitle">Header Level 3</h3>
-
-            <ul class="block_body_lists">
-              <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
-              <li>Aliquam tincidunt mauris eu risus.</li>
-            </ul>
-
-          </div>
+      <section class="topics">
+        <h2 class="topics__title">Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</h2>
+        <p class="topics__p"><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. <strong class="marker">Vestibulum erat wisi</strong>, condimentum sed, commodo vitae, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
       </section>
+
+      <section class="topics">
+        <h2 class="topics__title">Header Level 2</h2>
+        <ol class="topics__lists">
+          <li>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</li>
+          <li>Aliquam tincidunt mauris eu risus.</li>
+        </ol>
+        <p class="topics__p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna. Cras in mi at felis aliquet congue. Ut a est eget <strong class="marker">ligula molestie gravida</strong>. Curabitur massa. Donec eleifend, libero at sagittis mollis, tellus est malesuada tellus, at luctus turpis elit sit amet quam. Vivamus pretium ornare est.</p>
+      </section>
+
+      <section class="topics">
+        <h3 class="topics__subtitle">Header Level 3</h3>
+        <ul class="topics__items">
+          <li class="topics__items--item">Banner01</li>
+          <li class="topics__items--item">Banner02</li>
+          <li class="topics__items--item">Banner03</li>
+        </ul>
+        <p class="cap">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit sequi et quisquam, quidem eum iusto, omnis consectetur commodi minus neque nisi obcaecati eius aliquid deleniti rem, reiciendis similique! Ratione cumque tempore neque ducimus rerum, ad officiis nihil nam iste quibusdam fugit, at accusantium corporis facilis debitis, blanditiis a ut sunt.</p>
+      </section>
+
     </div>
   </main>
 
-  <p class="page-top"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p>
+  <p id="pageTop"><a href="#"><i class="fa fa-arrow-up fa-lg"></i></a></p>
 
-  <footer class="gl-footer">
-    <div class="container gl-footer_container">
+  <footer class="glFooter">
+    <div class="container glFooter__body">
       <small>&copy;20XX XXXX Co., Ltd. All Rights Reserved.</small>
     </div>
   </footer>
-
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-96344339-1"></script>
@@ -133,6 +126,15 @@
     gtag('require', 'linkid');
     gtag('config', 'UA-96344339-1');
   </script>
+
+  <!-- jQuery3.3.1 -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <!-- then Popper.js, then Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+  <!-- OriginalJS -->
+  <script src="js/index.js"></script>
 
 </body>
 </html
