@@ -22,6 +22,9 @@ html {
   /* スマホ横位置の文字サイズ変更なし */
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
+  /* OSXのSafari/Chromeの文字のアニメーション時のチラツキ解除*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   /* html以下全ての要素に対して */
   * {
     /* padding/border差し引きなし */
